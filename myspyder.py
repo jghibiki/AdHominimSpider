@@ -32,5 +32,5 @@ class DebateSpider(scrapy.Spider):
                 comment = comment[:n.start()] + comment[n.end():]
 
 
-            yield {"comment": comment.strip().encode('utf-8')}
+            yield {"comment": comment.strip()}
 
